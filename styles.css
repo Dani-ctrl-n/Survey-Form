@@ -29,16 +29,33 @@ form {
 
 label {
   font-weight: bold;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border-radius: 8px;
+  height: 2em;
+  border: #ccc solid 1px;
+  padding-left: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
-input,
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 select,
 textarea {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 button {
@@ -46,7 +63,7 @@ button {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
